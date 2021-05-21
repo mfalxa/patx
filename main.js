@@ -11,6 +11,17 @@ function displayUL(event) {
     document.getElementById(currentDir).src = './src/sky/s'+currentDir+'.png';
 }
 
+function updatePlotSizes(){
+    var plotWidth = 49*document.getElementById(0).width + document.getElementById('corner').width;
+    var k = (window.innerWidth - 200) / plotWidth
+    document.getElementById('corner').width = Math.floor(k * document.getElementById('corner').width);
+    for (var i =0; i < 49; i++) {
+        document.getElementById(i).width = Math.floor(k * document.getElementById(i).width);
+    }
+}
+
+window.addEventListener('resize', updatePlotSizes)
+
 var currentDir = 'UL_0'
 var src = document.getElementById('plot');
 for (var i=0; i < 49; i++) {
