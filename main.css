@@ -1,0 +1,21 @@
+.body {
+  background-color: black;
+}
+
+.patxer {
+  transform: scale(0.4);
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  opacity: 0.75;
+}
+
+.mainplot::after {
+  display: block;
+}
+
+.corner {
+  color: white;
+  display: inline-block;
+}
