@@ -3,8 +3,6 @@
 }
 
 .patxer {
-  transform: scale(0.4);
-  height: 150px;
   display: flex;
   flex-direction: column;
   text-align: center;
