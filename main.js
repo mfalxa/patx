@@ -23,7 +23,7 @@ for (var i=0; i < 49; i++) {
 var corner = document.getElementById('corner');
 var header = document.getElementById('header')
 src.addEventListener("mouseenter", function(event) {
-    corner.src = './src/'+currentDir+'/corner/corner' + event.target.id +'.png';
+    corner.src = './src/'+currentDir+'/corner/corner' + event.target.id +'.jpg';
     header.innerHTML = 'f = 1e' + data['f'][event.target.id].toFixed(2) + ' Hz || log_ul = ' + data[currentDir]['ul_'+event.target.id].toFixed(2) + ' || log_median = ' + data[currentDir]['medians_'+event.target.id].toFixed(2)
     }, true);
 
